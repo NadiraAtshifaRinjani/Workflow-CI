@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Miniconda
@@ -25,4 +25,5 @@ jobs:
       - name: Run MLflow Project
         run: |
           cd MLProject
+          ls -la
           mlflow run .

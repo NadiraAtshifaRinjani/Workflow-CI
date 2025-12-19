@@ -5,10 +5,14 @@ import mlflow.sklearn
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
+import os
 
 #Load Data
-df = pd.read_csv("data_preprocessed.csv")
-df.head()
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(BASE_DIR, "dataset_preprocessing", "data_preprocessed.csv")
+
+df = pd.read_csv(DATA_PATH)
+
 
 
 #Split Data

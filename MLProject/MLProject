@@ -1,6 +1,4 @@
-name: housing-price-training
-
-conda_env: conda.yaml
+name: mlflow-ci-project
 
 entry_points:
   main:
